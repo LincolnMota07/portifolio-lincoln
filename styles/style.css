@@ -16,7 +16,6 @@
     padding: 0;
 }
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
     background: radial-gradient(circle, #000000, #3a3e44);
     color: var(--cor-secundaria);
@@ -35,7 +34,7 @@ body {
 .cabecalho__menu__link {
     color: #22D4FD;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -48,6 +47,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
     
 }
 
@@ -61,7 +61,7 @@ body {
 }
 .apresentacao__conteudo__texto {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--cor-secundaria);
 }
@@ -71,14 +71,15 @@ body {
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
 }
 
 .apresentacao__links {
@@ -92,25 +93,25 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
     gap: 16px;
     text-decoration: none;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #f6f6f6;
     text-align: center;
-    width: 378px;
+    width: 50%;
     border-radius: 8px;
     border: 2px solid var(--cor-terciaria);
     padding: 21.5px 0;
 
 }
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     font-weight: bold;
     background-color: var(--cor-gradiente);
     color: var(--cor-hover);
@@ -121,13 +122,13 @@ body {
 }
 
 .apresentacao_foto {
-    width: 490px;
+    width: 40%;
     
 }
 
 .rodape {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
     font-weight: 600;
@@ -135,3 +136,25 @@ body {
     padding: 23px;
 }
 
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+}
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+    .apresentacao_foto {
+        width: 50%;
+        
+    }
+
+}
