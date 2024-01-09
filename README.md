@@ -16,7 +16,7 @@
 </div>
 
 ## 🔗 Site do Projeto
-[Portifólio](https://portifolio-lincoln.vercel.app:target="_blank")
+<a href="https://portifolio-lincoln.vercel.app" target="_blank">Portifólio</a>
 
 
 ## 🫂 Time
