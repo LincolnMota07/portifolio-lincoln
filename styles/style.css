@@ -126,6 +126,17 @@ body {
     
 }
 
+.apresentacao__links__botao {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    padding-left: 15%;
+}
+.apresentacao__links__botao:hover {
+    color: var(--cor-secundaria);
+}
+
 .rodape {
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
@@ -155,6 +166,10 @@ body {
     .apresentacao_foto {
         width: 50%;
         
+    }
+    .apresentacao__links__botao {
+        padding-left: 0%;
+        font-size: 0.9rem;
     }
 
 }
