@@ -168,8 +168,9 @@ body {
         
     }
     .apresentacao__links__botao {
-        padding-left: 0%;
-        font-size: 0.9rem;
+        padding: 0%;
+        font-size: 1.05rem;
+
     }
 
 }
